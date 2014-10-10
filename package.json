@@ -1,11 +1,9 @@
 {
   "name": "bootstrap-prefixer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Prefixes all bootstrap classes with the given string.",
-  "main": "bin/bootstrap-prefixer.js",
-  "scripts": {
-    "test": "bin/bootstrap-prefixer.js"
-  },
+  "main": "bootstrap-prefixer",
+  "files": ["bin/bootstrap-prefixer.js"],
   "keywords": [
     "bootstrap",
     "prefix"
