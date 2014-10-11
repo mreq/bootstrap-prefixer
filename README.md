@@ -1,7 +1,7 @@
 bootstrap-prefixer
 ==================
 
-Node tool for prefixing twitter bootstrap's less files.
+Node tool for prefixing bootstrap's less files.
 
 Usage
 -----
