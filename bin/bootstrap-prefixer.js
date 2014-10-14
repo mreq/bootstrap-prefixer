@@ -19,13 +19,15 @@
     console.log("Are you sure you want to continue? [Y/n]");
     prompt.start();
     prompt.get(['continue'], function(er, res) {
-      var addPrefix, handle, rgx;
+      var addPrefix, handle, rgx, tildeRgx;
       if (!(res["continue"] === '' || res["continue"] === 'Y' || res["continue"] === 'y')) {
         return console.log('Not doing anything then.');
       }
       rgx = /(\.)([^\d]\w[^\s"\.]*)([\(,\s;\.])/g;
+      tildeRgx = /\.col-/g;
       addPrefix = function(str) {
-        return str.replace(rgx, "$1" + prefix + "$2$3");
+        str.replace(rgx, "$1" + prefix + "$2$3");
+        return str.replace(tildeRgx, "." + prefix + "col-");
       };
       handle = function(er, files) {
         var file, str, _i, _len, _results;

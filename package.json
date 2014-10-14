@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-prefixer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Prefixes all bootstrap classes with the given string.",
   "directories": ["bin"],
   "files": ["bin"],
