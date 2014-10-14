@@ -19,7 +19,7 @@ if prefix and lessPath
 		tildeRgx = /\.col-/g
 
 		addPrefix = (str) ->
-			str.replace rgx, "$1#{ prefix }$2$3"
+			str = str.replace rgx, "$1#{ prefix }$2$3"
 			# fix grid-framework.less ~"" values
 			str.replace tildeRgx, ".#{ prefix }col-"
 

@@ -26,7 +26,7 @@
       rgx = /(\.)([^\d]\w[^\s"\.]*)([\(,\s;\.])/g;
       tildeRgx = /\.col-/g;
       addPrefix = function(str) {
-        str.replace(rgx, "$1" + prefix + "$2$3");
+        str = str.replace(rgx, "$1" + prefix + "$2$3");
         return str.replace(tildeRgx, "." + prefix + "col-");
       };
       handle = function(er, files) {
