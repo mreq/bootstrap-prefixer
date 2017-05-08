@@ -39,7 +39,6 @@
         }
         return _results;
       };
-      glob("" + lessPath + "/*.less", handle);
       glob("" + lessPath + "/**/*.less", handle);
       return console.log('Finished prefixing.');
     });
